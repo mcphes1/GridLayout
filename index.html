@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout</title>
+<style>
+	body { 
+		background: whitesmoke;
+	} #container {
+		width: 800px;
+		height: 800px;
+		background: white;
+		border: 1px solid dimgray;
+		margin: 24px auto;
+		display: grid;
+		grid-template: 400px 400px / 400px 400px;
+		
+	} #container div {
+		font: 72pt/1.4em Candara
+		
+	} #container div:nth-child(1) {
+    background: lightblue;
+}
+#container div:nth-child(2) {
+    background: lightgreen;
+	grid-area: 1/2/3;
+}
+#container div:nth-child(3) {
+    background: lavender;
+}
+#container div:nth-child(4) {
+    background: pink;
+	display: none;
+
+}
+	
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div><img  src="fruitger aero 2.jpg" width= "400" height= "400" /></div>
+		<div><img src="fruitger aero 1.jpg" width="400" height="800" /></div>
+		<div><img src="fruitger aero 3.jpg" width="400" height="400" /></div>
+	</div>
+	
+</body>
+</html>
